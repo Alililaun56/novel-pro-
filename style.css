@@ -1,0 +1,58 @@
+body {
+  margin:0;
+  font-family:'Noto Nastaliq Urdu', serif;
+  background:#050510;
+  color:white;
+}
+
+.topbar {
+  text-align:center;
+  padding:20px;
+  background:linear-gradient(90deg,#0ff,#f0f,#0ff);
+  box-shadow:0 0 20px cyan;
+}
+
+.logo {
+  width:100px;
+  border-radius:10px;
+}
+
+.hero {
+  height:250px;
+  background:url("https://i.postimg.cc/cCshMDmj/file-0000000007fc71f8bcb0be05fe1662fb.png") center/cover;
+  position:relative;
+}
+
+.overlay {
+  position:absolute;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.6);
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+
+.btn {
+  background:#0ff;
+  padding:10px 15px;
+  border-radius:8px;
+  text-decoration:none;
+  color:black;
+  font-weight:bold;
+}
+
+.grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+  gap:10px;
+  padding:15px;
+}
+
+.card {
+  background:#111;
+  padding:10px;
+  border-radius:10px;
+  box-shadow:0 0 10px #0ff;
+  }
