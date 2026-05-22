@@ -1,0 +1,11 @@
+import { auth, signInWithEmailAndPassword, createUserWithEmailAndPassword } from "./firebase.js";
+
+window.login = async () => {
+  await signInWithEmailAndPassword(auth, email.value, pass.value);
+  window.location.href="index.html";
+};
+
+window.signup = async () => {
+  await createUserWithEmailAndPassword(auth, email.value, pass.value);
+  alert("Account Created");
+};
